@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+nav a{
+    font-size: 3rem;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+.harryPotter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(213, 233, 226);
+}
+
+articulo{
+    width: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: beige;
+}
+
+.nombre{
+    font-size: 2rem;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    padding: 1.3rem;
+    width: 50%;
+    background-color: red;
+}
+
+.imagen img{
+    width: 100%;
+    padding: 1rem;
+}

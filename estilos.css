@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+
+nav a{
+    font-size: 3rem;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+label{
+    font-size: 2rem;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+    width: 30%;
+}
+
+input{
+padding: 5px;
+margin: 3px;
+}
+
+ul{
+    font-size: 2rem;
+}
+
+button{
+    background-color: red;
+    border-radius: 10px;
+    width: 35%;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(165, 42, 42);
+}
