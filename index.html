@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="./estilos.css">
 </head>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <body>
     <nav>
         <a href="#">Formulario </a>
         <a href="./API/api.html">API</a>
     </nav>
-    <h1>Formulario</h1>
+    <div class="container">
+    <h1 class="titulo">Personajes Harry Potter</h1>
+    <img class="imagen" src="./images/harry.png" alt="">
+    </div>
     <div class="formulario"> 
-    <label for="nombre">Nombre: </label>
-    <input type="text" id="nombre" placeholder="Tu respuesta">
+    <label for="nombre">Buscar: </label>
+    <input type="text" id="nombre" placeholder="Elige tu personaje">
    <br>
-   <label for="apellido">Apellido: </label>
-    <input type="text" id="apellido" placeholder="Tu respuesta">
-    <br>
-    <label for="email">Correo Electrónico: </label>
-    <input type="email" id="email" name="email" placeholder="Tu respuesta">
-     <button id="agregarDatos">Enviar</button>
-    <ul>
+     <button  id="agregarDatos">Enviar</button>
+    <ul id="resultados">
 
     </ul>
 </div>

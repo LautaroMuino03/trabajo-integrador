@@ -1,40 +1,32 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const inputNombre = document.getElementById('nombre');
-    const inputApellido = document.getElementById('apellido');
-    const inputEmail = document.getElementById('email');
-    const botonAgregar = document.getElementById('agregarDatos');
-    const lista = document.querySelector('ul');
 
-    botonAgregar.addEventListener('click', function() {
-        const nombre = inputNombre.value.trim();
-        const apellido = inputApellido.value.trim();
-        const email = inputEmail.value.trim();
+document.getElementById('agregarDatos').addEventListener('click', function() {
+    const nombre = document.getElementById('nombre').value.trim().toLowerCase();
+    const url = 'https://hp-api.herokuapp.com/api/characters';
 
-        if (nombre && apellido && email) {
-            const elementoLista = document.createElement('li');
-            elementoLista.textContent = `${nombre} ${apellido} ${email}`;
-            
-            // Botón para eliminar
-            const botonEliminar = document.createElement('button');
-            botonEliminar.textContent = ' Eliminar';
-             botonEliminar.classList.add('boton-eliminar');
-            botonEliminar.addEventListener('click', function() {
-                lista.removeChild(elementoLista);
-            });
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const resultados = document.getElementById('resultados');
+            resultados.innerHTML = '';
 
-            elementoLista.appendChild(botonEliminar);
-            lista.appendChild(elementoLista);
-
-            // Limpiar los campos
-            inputNombre.value = '';
-            inputApellido.value = '';
-        }
-
-        
+            const personaje = data.find(personaje => personaje.name.toLowerCase() === nombre);
+            if (personaje) {
+                const li = document.createElement('li');
+                li.classList.add('character');
+                
+                const img = document.createElement('img');
+                img.src = personaje.image;
+                img.alt = personaje.name;
+                
+                const info = document.createElement('div');
+                info.innerHTML = `<h2>${personaje.name}</h2><p>Casa: ${personaje.house}</p>`;
+                
+                li.appendChild(img);
+                li.appendChild(info);
+                resultados.appendChild(li);
+            } else {
+                resultados.innerHTML = '<li>Personaje no encontrado.</li>';
+            }
+        })
+        .catch(error => console.error('Error:', error));
     });
-});
-
-
-
-
-
