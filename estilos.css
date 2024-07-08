@@ -1,74 +1,133 @@
-
-*{
-    margin:0;
-    padding:0;
-}
-body{
-    background-color: rgb(86.27, 7.84, 23.53);
-
-
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-nav{
-    background-color: beige;
-    
+body {
+  background-color: rgb(86.27, 7.84, 23.53);
 }
 
-nav a{
-    font-size: 3rem;
-    text-decoration: none;
-    list-style: none;
-    color: black;
-    font-size: 28px;
+nav {
+  background-color: beige;
 }
 
-#letra{
-        font-family: "Nanum Gothic", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+nav a {
+  font-size: 3rem;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 28px;
 }
+
+h1{
+    font-family: "Playwrite VN", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 1rem;
+}
+
 
 
 .container {
-    text-align: center;
-    color: white;
-    padding: 10px;
-    background-color: rgb(36, 34, 33);
-    width: auto;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: rgb(36, 34, 33);
+  width: auto;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .imagen {
-    width: 200px;
-    height: 100px;
+  width: 200px;
+  height: 100px;
 }
 
-.formulario{
-    text-align: center;
-    font-size: 2.2rem;
-    color: rgb(0, 0, 0);
+.formulario {
+  text-align: center;
+  font-size: 2.2rem;
+  color: white;
 }
 
-input{
-    padding: 0.3rem;
+input {
+  padding: 0.3rem;
 }
 
-#agregarDatos{
-    background-color: rgb(36, 34, 33);
-    color: white;
-    padding: 0.5rem;
+#agregarDatos {
+  background-color: rgb(36, 34, 33);
+  color: white;
+  padding: 0.5rem;
 }
 
-#agregarDatos:hover{
-    cursor: pointer;
-    background-color: rgb(53, 49, 47);;
+#agregarDatos:hover {
+  cursor: pointer;
+  background-color: rgb(53, 49, 47);
 }
 
-img{
-width: 350px;
-height: 400px;
-padding: 0.5rem;
+img {
+  width: 350px;
+  height: 400px;
+  padding: 0.5rem;
+}
+
+.formulario2 {
+  padding: 30px;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start
+}
+
+ul,
+li {
+  color: white;
+  padding: 15px;
+  list-style: none;
+}
+
+.agregar {
+  color: white;
+  font-size: 30px;
+}
+
+#agregarHechizo {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  background-color: rgb(36, 34, 33);
+  width: auto;
+  height: auto;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+#agregarHechizo:hover {
+  cursor: pointer;
+  background-color: rgb(53, 49, 47);
+}
+
+.eliminar {
+  cursor: pointer;
+  background-color: rgb(53, 49, 47);
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.eliminar:hover {
+  background-color: rgb(31, 29, 28);
+}
+
+.altura {
+  min-height: 85vh;
+}
+
+
+
+.boton{
+    display: flex;
 }

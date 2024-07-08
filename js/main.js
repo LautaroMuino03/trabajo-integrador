@@ -11,12 +11,12 @@ document.getElementById('agregarDatos').addEventListener('click', function() {
 
             const personaje = data.find(personaje => personaje.name.toLowerCase() === nombre);
             if (personaje) {
-                const li = document.createElement('li');
+                const li = document.createElement('ul');
                 li.classList.add('character');
                 
                 const img = document.createElement('img');
                 img.src = personaje.image;
-                img.alt = personaje.name;
+                
                 
                 const info = document.createElement('div');
                 info.innerHTML = `<h2>${personaje.name}</h2><p>Casa: ${personaje.house}</p>`;

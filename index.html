@@ -6,13 +6,19 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./estilos.css">
+
 </head>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <body>
+
     <nav>
         <a href="#">Formulario </a>
         <a href="./API/api.html">API</a>
     </nav>
+
+
+    <!-- Primer formulario -->
+<div class="clasePadre"> 
+  <div class="altura">
     <div class="container">
     <h1 class="titulo">Personajes Harry Potter</h1>
     <img class="imagen" src="./images/harry.png" alt="">
@@ -21,13 +27,31 @@
     <label for="nombre">Buscar: </label>
     <input type="text" id="nombre" placeholder="Elige tu personaje">
    <br>
-     <button  id="agregarDatos">Enviar</button>
+    <button  id="agregarDatos">Enviar</button>
     <ul id="resultados">
-
+  </div>
     </ul>
 </div>
 
 
+<!-- Segunda parte -->
+
+
+<div class="formulario2"> 
+    
+    <div class="hechizosInput"> 
+    <label for="nombreHechizo" class="agregar">Agregar hechizo: </label>
+    <input type="text" id="nombreHechizos" placeholder="Agregar hechizo">
+</div>
+    <div class="boton">
+    <button  id="agregarHechizo">Agregar</button>
+</div>
+    <ul id="resultadosHechizos">
+        
+    </ul>
+</div>
+</div>  
     <script src="./js/main.js"></script>
+    <script src="./js/hechizos.js"></script>
 </body>
 </html>
